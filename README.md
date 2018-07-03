@@ -6,8 +6,11 @@ The following repo contains Toybox's troubleshooting page. We would love for you
 
 ## Getting started
 
-In the project directory, you can run:
-
+1. Clone the project
+2. on the command prompt, navigate to the project
+3. Run the command
+### `npm install`
+4. Run the command
 ### `npm start`
 
 Runs the app in the development mode.<br>
