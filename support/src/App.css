@@ -1,0 +1,305 @@
+
+body
+{
+  background-color: #f1f5f9;
+	font-family: 'Poppins',sans-serif;
+	font-weight: 300;
+	letter-spacing: 0.5px;
+	font-size: 15px;
+}
+body.avenirLoaded
+{
+  font-family: 'Avenir', sans-serif;
+}
+@font-face
+{
+  font-family: IconFont;
+  src: url('/fonts/toybox-glyphs.ttf?v=1.6');
+  font-display: block;
+}
+
+.App-intro
+{
+  font-size: large;
+}
+.title
+{
+  font-size:30px;
+  line-height:30px;
+  font-weight:300;
+  margin-bottom:20px;
+  text-align:center;
+
+}
+.troubleshootRoute
+{
+  background-color: #f1f5f9;
+}
+.troubleshoot
+{
+  min-height:100%;
+  position: relative;
+  display: block;
+}
+.mobile-selector-wrapper
+{
+  text-align: center;
+  width:100%;
+  font-size: 20px;
+
+}
+.t-nav-panel
+{
+  padding-top:50px;
+}
+.nav-sec
+{
+  padding:10px 10px 10px 50px;
+  cursor: pointer;
+  height:40px;
+}
+.nav-sec.active-sec
+{
+  color:#1f1f1f;
+  font-weight:500;
+  font-size: 17px;
+  -webkit-animation: switchActiveSection 0.15s ease-in-out;
+  -moz-animation: switchActiveSection 0.15s ease-in-out;
+  -o-animation: switchActiveSection 0.15s ease-in-out;
+  animation: switchActiveSection 0.15s ease-in-out;
+}
+
+
+img.landscape
+{
+  max-width:400px;
+}
+img.portrait
+{
+  max-width:300px;
+}
+
+.issue-link
+{
+  border: 1px solid #efefef;
+  margin-top:20px;
+  position: relative;
+  display: inline-block;
+  cursor:pointer;
+}
+.link-wrapper
+{
+  display: inline-block;
+  position: relative;
+  padding:10px;
+  color:#337ab7;
+  background-color: #f7f7f7;
+}
+.link-icon-wrapper
+{
+  display: inline-block;
+  position: relative;
+  background-color: white;
+  width:40px;
+  width: 40px;
+  vertical-align: top;
+  text-align: center;
+
+}
+.link-icon-wrapper .fa
+{
+  line-height: 40px;
+}
+.link-icon-wrapper .fa-check-circle
+{
+  color:#FF614C;
+}
+.left-panel
+{
+  display: inline-block;
+  position: fixed;
+  float: left;
+  width: 20%;
+  top: 70px;
+  left: 0px;
+}
+.right-panel
+{
+  margin-top: 20px;
+  display: inline-block;
+  position: relative;
+
+  width: 79%;
+  margin-left: 20%;
+}
+.main-troubleshoot
+{
+  background-color: white;
+  padding:10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 15px rgba(84,96,103,.25);
+  overflow: hidden;
+
+  width: 90%;
+}
+.title
+{
+  padding-top: 30px;
+
+}
+.title-sep
+{
+  max-width: 300px;
+  margin: 0 auto;
+
+  border-bottom: 1px solid #D1D5D9;
+}
+.center-div
+{
+  text-align: center;
+  margin: 0px auto;
+  max-width: 700px;
+  padding: 20px 0px;
+}
+
+.troubleshoot-section-body
+{
+  padding: 20px 0px;
+}
+.issue-sec, .issue-subsec
+{
+  padding-top: 10px;
+
+}
+.issue-sec .sec-body, .subsec-body
+{
+  display: none;
+}
+.issue-subsec .sec-body, .subsec-body
+{
+  display: none;
+}
+
+.issue-sec.sec-expand .sec-body
+{
+  display: block;
+  padding: 15px;
+  -webkit-animation: expandSection 0.5s ease-in-out;
+  -moz-animation: expandSection 0.5s ease-in-out;
+  -o-animation: expandSection 0.5s ease-in-out;
+  animation: expandSection 0.5s ease-in-out;
+}
+.issue-sec.sec-expand .p-sec
+{
+  display: none;
+}
+.issue-sec.sec-expand .m-sec
+{
+  display: inline-block;
+}
+
+
+.issue-subsec.subsec-expand .subsec-body
+{
+  display: block;
+  padding: 15px;
+  -webkit-animation: expandSection 0.5s ease-in-out;
+  -moz-animation: expandSection 0.5s ease-in-out;
+  -o-animation: expandSection 0.5s ease-in-out;
+  animation: expandSection 0.5s ease-in-out;
+}
+.issue-subsec.subsec-expand .p-subsec
+{
+  display: none;
+}
+.issue-subsec.subsec-expand .m-subsec
+{
+  display: inline-block;
+}
+
+.issue-title
+{
+  font-weight: 500;
+  color:#FF614C;
+}
+.issue-title, .subsec-title
+{
+  border-bottom: solid 1px #efefef;
+  padding:10px;
+  cursor: pointer;
+}
+.sec-body, .subsec-body
+{
+  transition: height 0.5s ease-in-out;
+
+}
+.sec-body, .subsec-body p
+{
+  padding: 10px;
+}
+.troubleshoot .fa-minus
+{
+  display: none;
+}
+
+.blue-link
+{
+  color:#337ab7;
+  cursor: pointer;
+}
+.bg-info
+{
+  margin-top: 10px;
+  width:240px;
+  height:40px;
+  line-height: 40px;
+  background-color: #d9edf7;
+  text-align: center;
+  -webkit-animation: showBGInfo 0.5s ease-in-out;
+  -moz-animation: showBGInfo 0.5s ease-in-out;
+  -o-animation: showBGInfo 0.5s ease-in-out;
+  animation: showBGInfo 0.5s ease-in-out;
+}
+.troubleshoot .center-div
+{
+  font-size: 13px;
+}
+
+
+@keyframes expandSection
+{
+  0% {
+    display:none;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@keyframes showBGInfo
+{
+  0% {
+    display:none;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@keyframes switchActiveSection
+{
+  0% {
+    color:black;
+    font-size:15px;
+    font-weight: 300;
+  }
+  100% {
+    color:#1f1f1f;
+    font-size:17px;
+    font-weight: 500;
+  }
+}
