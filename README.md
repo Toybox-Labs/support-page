@@ -2,7 +2,9 @@
 
 # Toybox Troubleshooting Page
 
-The following repo contains Toybox's troubleshooting page. We would love for you to contribute!
+Welcome to the Toybox's troubleshooting repo! Thanks for checking us out. We would love for you to contribute.
+
+You can submit pull requests if you want to help!
 
 ## Getting started
 
