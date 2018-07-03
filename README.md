@@ -1,6 +1,6 @@
+# :zap:Toybox Troubleshooting Page:zap:
 
-
-# Toybox Troubleshooting Page
+## Overview
 
 Welcome to the Toybox's troubleshooting repo! Thanks for checking us out. We would love for you to contribute.
 
