@@ -1,0 +1,425 @@
+@import "../util.scss";
+/*navbar*/
+nav
+{
+  width: 100%;
+  display: inline-block;
+  height:$nav-height;
+  position: fixed;
+  z-index: 30;
+  -webkit-transform: translate3d(0,0,0);
+  a:visited, a:hover
+  {
+    color:white;
+  }
+  .top-left
+  {
+    top: 0px;
+    left: 0px;
+    margin: 10px;
+    position: absolute;
+  }
+  .nav-container
+  {
+    max-width: $home-page-max-width ;
+    margin: 0 auto;
+    width: 100%;
+    height:$nav-height;
+    position: relative;
+  }
+  .transparent
+  {
+    background:transparent;
+    transition: background 0.5s;
+  }
+  .with-border
+  {
+    background:rgba(255,97,76,0.95);
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.15);
+    transition: background 0.5s;
+  }
+  .nav-background
+  {
+    background:$nav-background-color;
+  }
+  a
+  {
+    cursor:pointer;
+  }
+  .search-bar
+  {
+    display: inline-block;
+    position: relative;
+    z-index:20;
+    @include respond-to(not-extra-small-windows)
+    {
+      margin-left:20px;
+    }
+  }
+  .fa
+  {
+    color:white;
+    font-size: 2em;
+  }
+  input[type="text"]
+  {
+    border-radius:999em;
+    padding: 5px;
+    padding-left:1.75em;
+    line-height: inherit;
+  }
+  input[type="text"]:focus
+  {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: transparent;
+  }
+
+  .label
+  {
+    color:black;
+  }
+  .mid-navbar, .corner
+  {
+    a
+    {
+      color:white;
+      border-bottom: 2px solid transparent;
+    }
+    a:visited, a:hover
+    {
+      color:white;
+    }
+  }
+  .corner
+  {
+    position: absolute;
+    top:0px;
+    z-index: 100;
+    .insta-tag
+    {
+      margin-right: 30px;
+      margin-left: 45px !important;
+    }
+  }
+
+  .logo
+  {
+    margin: 17px 0px 0px 10px;
+    width: 149px;
+    height: 55px;
+    background-size: 100px 82px;
+    background: url("/icons/toybox-white.svg");
+    position: absolute;
+
+    background-repeat: no-repeat;
+    @include respond-to(extra-small-windows)
+    {
+      background: url("/icons/robot-head.svg") no-repeat !important;
+      margin-top: 5px;
+      width: 34px !important;
+      height: 55px !important;
+    }
+  }
+
+  .logo-small
+  {
+    display: inline-block;
+    margin: 22px 0px 0px 10px;
+    width: 95px;
+    height:18px;
+    background: url("/icons/toybox-white-94x15.svg");
+    background-repeat: no-repeat;
+
+    @include respond-to(extra-small-windows)
+    {
+      background: url("/icons/robot-head.svg") no-repeat !important;
+      margin-top: 5px;
+      width: 34px !important;
+      height: 55px !important;
+    }
+  }
+
+  .dual-nav
+  {
+    display: inline-block;
+    vertical-align: top;
+    margin: 18px 0px 0px 8px;
+    font-weight: 100;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    color: white;
+    @include respond-to(extra-small-windows)
+    {
+      display: none;
+    }
+
+  }
+  .dual-nav.divider
+  {
+    height: 26px;
+    width: 2px;
+    border-left: 1px solid #FFF;
+    margin-left: 10px;
+    -webkit-animation: expandDualNavDivider 0.5s ease-in-out;
+    -moz-animation: expandDualNavDivider 0.5s ease-in-out;
+    -o-animation: expandDualNavDivider 0.5s ease-in-out;
+    animation: expandDualNavDivider 0.5s ease-in-out;
+
+  }
+  .dual-nav.text
+  {
+    letter-spacing: 2px;
+    font-size: 19px;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+  }
+  .dual-nav.text.slide
+  {
+    -webkit-animation: slideLeft 0.5s ease-in-out;
+    -moz-animation: slideLeft 0.5s ease-in-out;
+    -o-animation: slideLeft 0.5s ease-in-out;
+    animation: slideLeft 0.5s ease-in-out;
+  }
+  .dual-nav.text:hover
+  {
+    color: #AB1E0C;
+  }
+}
+.mid-navbar, .corner.top-right
+{
+  height:$nav-height;
+  a
+  {
+    position: relative;
+    font-size:13px;
+    letter-spacing:1px;
+    font-weight:700;
+    text-transform: uppercase;
+  }
+}
+.mid-navbar
+{
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  @include respond-to(large-windows){
+    width: 500px;
+  }
+  @include respond-to(medium-windows){
+    width: 450px;
+  }
+  &.with-search-bar
+  {
+    height:$nav-height;
+    a
+    {
+      font-size:13px;
+      letter-spacing:1px;
+      font-weight:700;
+      text-transform: uppercase;
+    }
+  }
+}
+.mid-navbar
+{
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  @include respond-to(large-windows){
+    width: 500px;
+  }
+  @include respond-to(medium-windows){
+    width: 450px;
+  }
+  &.with-search-bar
+  {
+    padding-left: 30px;
+    width:400px;
+  }
+  .mid-navbar-wrapper
+  {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 28px;
+  }
+  .mid-navbar-btn-wrapper
+  {
+    height: 2em;
+    //vertical-align: middle;
+    display: inline-block;
+    text-align: center;
+    @include respond-to(large-windows){
+      width:120px;
+    }
+    @include respond-to(medium-windows){
+      width:100px;
+    }
+    @include respond-to(small-windows){
+      width:90px;
+    }
+  }
+  .mid-nav-underline
+  {
+    height:3px;
+    width:0%;
+    border-bottom: 2px solid transparent;
+    text-align: center;
+  }
+  .mid-nav-underline.selected
+  {
+    width:85px;
+    margin: 0 auto;
+    border-bottom: 2px solid white;
+    transition:border-color 0.15s ease-out, width 0.15s ease-out ;
+  }
+  a
+  {
+    white-space: nowrap
+  }
+}
+//.corner.top-left
+//{
+//  @include respond-to(extra-small-windows)
+//  {
+//    top:-5px !important;
+//  }
+//}
+.corner.top-right
+{
+  right:40px;
+  position: absolute;
+  @include respond-to(extra-small-windows) {
+    right:30px;
+  }
+  @include respond-to(large-windows){
+    width:180px;
+  }
+  @include respond-to(medium-windows){
+    width:180px;
+  }
+  .top-right-wrapper
+  {
+    position: relative;
+    height:$nav-height;
+    display: inline-block;
+    width: 100%;
+  }
+  .navbar-icon
+  {
+    font-size:1.25em;
+    display: inline-block;
+    text-transform: none;
+  }
+  .cart-icon-wrapper
+  {
+    display: inline-block;
+    position:relative;
+    .cart-circle
+    {
+      background-color: white;
+      border:2px solid $toybox-red;
+      span
+      {
+        color: $toybox-red;
+      }
+    }
+  }
+  .buy-now-btn
+  {
+    margin:2px 0px 0px 0px;
+    @include respond-to(smaller-than-medium-windows){
+      display: none;
+    }
+    @include respond-to(medium-windows){
+      display: none;
+    }
+    @include respond-to(large-windows){
+      width:160px;
+    }
+  }
+
+  .menu-btn
+  {
+    display: inline-block;
+    @include respond-to(not-extra-small-windows)
+    {
+      display: none;
+    }
+  }
+  .inline-wrapper
+  {
+    position: relative;
+    display: inline-block;
+  }
+  .sign-in-nav
+  {
+    float:right;
+  }
+  a
+  {
+    margin-left:30px;
+    vertical-align: top;
+    line-height: 80px;
+  }
+  .account-btn
+  {
+    font-size:1.25em;
+  }
+  .printer-btn
+  {
+    position: relative;
+
+    font-size:1.25em;
+    .sub-item
+    {
+      position: absolute;
+      bottom: 0;
+      left:-10px;
+      border-radius: 50%;
+      height: 20px;
+      width: 20px;
+      font-size: 15px;
+      text-align: center;
+      background-color:#00b6d1;
+      color:white;
+      .inner-text
+      {
+        position: relative;
+        top: -29px;
+      }
+    }
+  }
+}
+
+@keyframes slideLeft
+{
+  0% {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+@keyframes expandDualNavDivider
+{
+  0% {
+    height: 0px;
+    opacity: 0;
+  }
+  100% {
+    height: 26px;
+    opacity: 1;
+  }
+}

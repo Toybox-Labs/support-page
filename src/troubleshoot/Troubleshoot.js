@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import TroubleshootNavigationPanel from './elements/TroubleshootNavigationPanel'
 import MainTroubleshootPage from './elements/MainTroubleshootPage'
-
+import './Troubleshoot.css';
 class Troubleshoot extends Component {
   constructor(){
     super()

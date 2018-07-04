@@ -1,0 +1,192 @@
+/* COLORS */
+/*Top level variables*/
+/*#00BEF3*/
+.troubleshootRoute {
+  background-color: #f1f5f9; }
+
+.troubleshoot {
+  min-height: 100%;
+  position: relative;
+  display: block; }
+  .troubleshoot .mobile-selector-wrapper {
+    text-align: center;
+    width: 100%;
+    font-size: 20px; }
+    @media only screen and (min-width: 767px) {
+      .troubleshoot .mobile-selector-wrapper {
+        display: none; } }
+  .troubleshoot .t-nav-panel {
+    padding-top: 50px; }
+    @media only screen and (max-width: 767px) {
+      .troubleshoot .t-nav-panel {
+        display: none; } }
+    .troubleshoot .t-nav-panel .nav-sec {
+      padding: 10px 10px 10px 50px;
+      cursor: pointer;
+      height: 40px; }
+      .troubleshoot .t-nav-panel .nav-sec.active-sec {
+        color: #1f1f1f;
+        font-weight: 500;
+        font-size: 17px;
+        -webkit-animation: switchActiveSection 0.15s ease-in-out;
+        -moz-animation: switchActiveSection 0.15s ease-in-out;
+        -o-animation: switchActiveSection 0.15s ease-in-out;
+        animation: switchActiveSection 0.15s ease-in-out; }
+  .troubleshoot img.landscape {
+    max-width: 400px; }
+  .troubleshoot img.portrait {
+    max-width: 300px; }
+  .troubleshoot .issue-link {
+    border: 1px solid #efefef;
+    margin-top: 20px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer; }
+    @media only screen and (max-width: 767px) {
+      .troubleshoot .issue-link {
+        display: none !important; } }
+    .troubleshoot .issue-link .link-wrapper {
+      display: inline-block;
+      position: relative;
+      padding: 10px;
+      color: #337ab7;
+      background-color: #f7f7f7; }
+    .troubleshoot .issue-link .link-icon-wrapper {
+      display: inline-block;
+      position: relative;
+      background-color: white;
+      width: 40px;
+      width: 40px;
+      vertical-align: top;
+      text-align: center; }
+      .troubleshoot .issue-link .link-icon-wrapper .fa {
+        line-height: 40px; }
+      .troubleshoot .issue-link .link-icon-wrapper .fa-check-circle {
+        color: #FF614C; }
+  .troubleshoot .left-panel {
+    display: inline-block;
+    position: fixed;
+    float: left;
+    width: 20%;
+    top: 70px;
+    left: 0px; }
+  .troubleshoot .right-panel {
+    margin-top: 20px;
+    display: inline-block;
+    position: relative; }
+    @media only screen and (min-width: 767px) {
+      .troubleshoot .right-panel {
+        width: 79%;
+        margin-left: 20%; } }
+    @media only screen and (max-width: 767px) {
+      .troubleshoot .right-panel {
+        width: 100%; } }
+  .troubleshoot .main-troubleshoot {
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 15px rgba(84, 96, 103, 0.25);
+    overflow: hidden; }
+    @media only screen and (min-width: 767px) {
+      .troubleshoot .main-troubleshoot {
+        width: 90%; } }
+    .troubleshoot .main-troubleshoot .title {
+      padding-top: 30px; }
+      @media only screen and (max-width: 767px) {
+        .troubleshoot .main-troubleshoot .title {
+          display: none; } }
+    .troubleshoot .main-troubleshoot .title-sep {
+      max-width: 300px;
+      margin: 0 auto; }
+      @media only screen and (min-width: 767px) {
+        .troubleshoot .main-troubleshoot .title-sep {
+          border-bottom: 1px solid #D1D5D9; } }
+  .troubleshoot .troubleshoot-section-body {
+    padding: 20px 0px; }
+  .troubleshoot .issue-sec, .troubleshoot .issue-subsec {
+    padding-top: 10px; }
+    .troubleshoot .issue-sec .sec-body, .troubleshoot .issue-sec .subsec-body, .troubleshoot .issue-subsec .sec-body, .troubleshoot .issue-subsec .subsec-body {
+      display: none; }
+  .troubleshoot .issue-sec.sec-expand .sec-body {
+    display: block;
+    padding: 15px;
+    -webkit-animation: expandSection 0.5s ease-in-out;
+    -moz-animation: expandSection 0.5s ease-in-out;
+    -o-animation: expandSection 0.5s ease-in-out;
+    animation: expandSection 0.5s ease-in-out; }
+  .troubleshoot .issue-sec.sec-expand .p-sec {
+    display: none; }
+  .troubleshoot .issue-sec.sec-expand .m-sec {
+    display: inline-block; }
+  .troubleshoot .issue-subsec.subsec-expand .subsec-body {
+    display: block;
+    padding: 15px;
+    -webkit-animation: expandSection 0.5s ease-in-out;
+    -moz-animation: expandSection 0.5s ease-in-out;
+    -o-animation: expandSection 0.5s ease-in-out;
+    animation: expandSection 0.5s ease-in-out; }
+  .troubleshoot .issue-subsec.subsec-expand .p-subsec {
+    display: none; }
+  .troubleshoot .issue-subsec.subsec-expand .m-subsec {
+    display: inline-block; }
+  .troubleshoot .issue-title {
+    font-weight: 500;
+    color: #FF614C; }
+  .troubleshoot .issue-title, .troubleshoot .subsec-title {
+    border-bottom: solid 1px #efefef;
+    padding: 10px;
+    cursor: pointer; }
+  .troubleshoot .sec-body, .troubleshoot .subsec-body {
+    transition: height 0.5s ease-in-out; }
+    .troubleshoot .sec-body p, .troubleshoot .subsec-body p {
+      padding: 10px; }
+  .troubleshoot .fa-minus {
+    display: none; }
+  .troubleshoot .blue-link {
+    color: #337ab7;
+    cursor: pointer; }
+  .troubleshoot .bg-info {
+    margin-top: 10px;
+    width: 240px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #d9edf7;
+    text-align: center;
+    -webkit-animation: showBGInfo 0.5s ease-in-out;
+    -moz-animation: showBGInfo 0.5s ease-in-out;
+    -o-animation: showBGInfo 0.5s ease-in-out;
+    animation: showBGInfo 0.5s ease-in-out; }
+  .troubleshoot .center-div {
+    text-align: center;
+    margin: 0px auto;
+    max-width: 700px;
+    padding: 20px 0px;
+    font-size: 13px; }
+  .troubleshoot .expandable .fa {
+    margin-right: 5px; }
+
+@keyframes expandSection {
+  0% {
+    display: none;
+    opacity: 0; }
+  100% {
+    display: block;
+    opacity: 1; } }
+
+@keyframes showBGInfo {
+  0% {
+    display: none;
+    opacity: 0; }
+  100% {
+    display: block;
+    opacity: 1; } }
+
+@keyframes switchActiveSection {
+  0% {
+    color: black;
+    font-size: 15px;
+    font-weight: 300; }
+  100% {
+    color: #1f1f1f;
+    font-size: 17px;
+    font-weight: 500; } }

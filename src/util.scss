@@ -1,0 +1,130 @@
+/* COLORS */
+$toybox-red:#FF614C;
+$toybox-red-hover:#EF513C;
+$toybox-red-dark:#EF414A;
+/*Top level variables*/
+$break-small: 767px;
+$break-ipad: 769px;
+$break-medium: 991px;
+$break-large: 1199px;
+$break-extra-large: 1599px;
+$less-mellow-grey:#EFEFEF;
+$mellow-grey:#f5f5f5;
+$a-link-color:#337ab7;
+$nav-height:80px;
+$baby-blue:#42BDED; /*#00BEF3*/
+$yellow:#FFC130;
+$turquoise:#00D7CE;
+$turquoise-light:#16b5aa;
+$dark-blue:#005DA3;
+$background-grey:#EFEFEF;
+$emphasis-color:#1f1f1f;
+$medium-grey:#505050;
+$light-grey:#747474;
+$lighter-grey:#A6A6A6;
+$lightest-grey:#F4F4F4;
+$nav-background-color:$toybox-red;
+$search-bar-in-nav-color:#F05D4E;
+$footer-background-color:#21A298;
+$theme-contrast-color:#00b6d1;
+$background-body-color:white;
+$theme-contrast-color-hover:#00b0ca;
+$menu-item-text-color:#4c4948;
+$menu-action-item-text-color:#868787;
+$border-color: #e6e6e6;
+$loading-animation-color:$theme-contrast-color;
+$checkmark-animation-color:$theme-contrast-color;
+$floating-button-size: 50px;
+$border-radius-default:4px;
+
+
+$avatar-selection-item-size: 200px;
+$avatar-slider-height: 30px;
+$avatar-selection-item-margin: 10px;
+$avatar-selection-item-menu-height: 40px;
+$avatar-selector-grey:#D8D8D8;
+$avatar-nav-height: 64px;
+$avatar-button-height: 64px;
+$avatar-icon-size: 90px;
+$ios-extras-icon-size: 113px; //48px;
+
+$avatar-selection-item-menu-item-height: 40px;
+$avatar-selection-item-menu-icon-width: 40px;
+$avatar-selection-item-menu-label-width: 100px;
+$avatar-item-view-image-size: 250px;
+$avatar-tab-bar-height: 40px;
+
+$tile-width-big: 300px;
+$tile-width-small: 150px;
+$tile-height-big: $tile-width-big*3/4;
+$tile-height-small: $tile-width-small*3/4;
+
+$tile-margin-big: 10px;
+$tile-margin-medium: 10px;
+$tile-margin-small: 5px;
+
+$home-page-max-width: 1620px;
+
+$tile-width-big-wide : 2*($tile-width-big + $tile-margin-big);
+$tile-width-small-wide : 2*($tile-width-small + $tile-margin-big);
+$tile-height-big-wide : $tile-width-big-wide * 100/235;
+$tile-height-small-wide : $tile-width-small-wide * 100/235;
+
+$tile-mini-percent: 0.9;
+
+$accent-color: #FF614C;
+$error-color: #F3A533;
+$seconday-accent-color: #16B5AA;
+
+$max-width: 1100px;
+
+$icon-toggle-height: 52px;
+
+$canvas-control-panel-height: 50px;
+$home-background-color: #EEEEEE;
+
+
+
+
+$fancy-title-font: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+@mixin respond-to($media)
+{
+ @if $media == extra-small-screens {
+   @media only screen and (max-device-width: $break-small)  { @content; }
+ }
+ @else if $media == small-screens {
+   @media only screen and (min-device-width: $break-small + 1) and (max-device-width: $break-medium)  { @content; }
+ }
+ @else if $media == medium-screens {
+   @media only screen and (min-device-width: $break-medium + 1) and (max-device-width: $break-large) { @content; }
+ }
+ @else if $media == large-screens {
+   @media only screen and (min-device-width: $break-large + 1) { @content; }
+ }
+ @else if $media == extra-small-windows {
+   @media only screen and (max-width: $break-small) { @content; }
+ }
+ @else if $media == small-windows {
+   @media only screen and (min-width: $break-small + 1) and (max-width: $break-medium)  { @content; }
+ }
+ @else if $media == medium-windows {
+   @media only screen and (min-width: $break-medium + 1) and (max-width: $break-large) { @content; }
+ }
+ @else if $media == large-windows {
+   @media only screen and (min-width: $break-large + 1) { @content; }
+ }
+ @else if $media == extra-large-windows {
+   @media only screen and (min-width: $break-extra-large + 1) { @content; }
+ }
+ @else if $media == not-extra-small-windows {
+   @media only screen and (min-width: $break-small) { @content; }
+ }
+ @else if $media == medium-or-larger-windows {
+   @media only screen and (min-width: $break-medium) { @content; }
+ }
+ @else if $media == smaller-than-medium-windows {
+   @media only screen and (max-width: $break-medium) { @content; }
+ }
+
+}
