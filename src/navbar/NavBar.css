@@ -71,12 +71,12 @@ nav {
     width: 149px;
     height: 55px;
     background-size: 100px 82px;
-    background: url("/icons/toybox-white.svg");
+    background: url("https://s3-us-west-2.amazonaws.com/toybox-website-static-assets/toybox-white.svg");
     position: absolute;
     background-repeat: no-repeat; }
     @media only screen and (max-width: 767px) {
       nav .logo {
-        background: url("/icons/robot-head.svg") no-repeat !important;
+        background: url("https://s3-us-west-2.amazonaws.com/toybox-website-static-assets/robot-head.svg") no-repeat !important;
         margin-top: 5px;
         width: 34px !important;
         height: 55px !important; } }
@@ -85,7 +85,7 @@ nav {
     margin: 22px 0px 0px 10px;
     width: 95px;
     height: 18px;
-    background: url("/icons/toybox-white-94x15.svg");
+    background: url("https://s3-us-west-2.amazonaws.com/toybox-website-static-assets/toybox-white-94x15.png");
     background-repeat: no-repeat; }
     @media only screen and (max-width: 767px) {
       nav .logo-small {
