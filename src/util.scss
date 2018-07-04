@@ -128,3 +128,51 @@ $fancy-title-font: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
  }
 
 }
+
+@media (min-width:$break-small) {
+    .desktop-only {
+        display:block !important;
+    }
+    .mobile-only {
+        display:none !important;
+    }
+}
+@media (max-width: $break-small) {
+    .mobile-only {
+        display:block !important;
+    }
+    .desktop-only {
+    	display:none !important;
+    }
+}
+@media (max-width:$break-ipad) {
+    .ipad-or-smaller {
+        display:block !important;
+    }
+    .ipad-or-bigger{
+        display:none !important;
+    }
+}
+@media (min-width:$break-ipad+1) {
+    .ipad-or-bigger {
+        display:block !important;
+    }
+    .ipad-or-smaller {
+    	display:none !important;
+    }
+}
+
+.hidden-on-mobile
+{
+  @include respond-to(extra-small-windows)
+  {
+  display: none;
+  }
+}
+.hidden-on-desktop
+{
+  @include respond-to(not-extra-small-windows)
+  {
+  display: none;
+  }
+}

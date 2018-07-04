@@ -1,6 +1,10 @@
 
 let ToyboxNavigationHelpers = {}
 
+ToyboxNavigationHelpers.getToyboxHomeURL = function(){
+  return 'https://www.make.toys/'
+}
+
 ToyboxNavigationHelpers.getStoreCatalogURL = function(){
   return 'https://shop.make.toys/store/catalog#all'
 }
@@ -23,6 +27,10 @@ ToyboxNavigationHelpers.getGithubRepoURL = function(){
 
 ToyboxNavigationHelpers.getGithubNewIssueURL = function(){
   return 'https://github.com/Toybox-Labs/support-page/issues/new'
+}
+
+ToyboxNavigationHelpers.goToToyboxHome = function(){
+  window.location = ToyboxNavigationHelpers.getToyboxHomeURL()
 }
 
 ToyboxNavigationHelpers.goToStoreCatalog = function(){

@@ -1,6 +1,38 @@
 /* COLORS */
 /*Top level variables*/
 /*#00BEF3*/
+@media (min-width: 767px) {
+  .desktop-only {
+    display: block !important; }
+  .mobile-only {
+    display: none !important; } }
+
+@media (max-width: 767px) {
+  .mobile-only {
+    display: block !important; }
+  .desktop-only {
+    display: none !important; } }
+
+@media (max-width: 769px) {
+  .ipad-or-smaller {
+    display: block !important; }
+  .ipad-or-bigger {
+    display: none !important; } }
+
+@media (min-width: 770px) {
+  .ipad-or-bigger {
+    display: block !important; }
+  .ipad-or-smaller {
+    display: none !important; } }
+
+@media only screen and (max-width: 767px) {
+  .hidden-on-mobile {
+    display: none; } }
+
+@media only screen and (min-width: 767px) {
+  .hidden-on-desktop {
+    display: none; } }
+
 /*navbar*/
 nav {
   width: 100%;
@@ -80,6 +112,17 @@ nav {
         margin-top: 5px;
         width: 34px !important;
         height: 55px !important; } }
+  nav .logo-small-right-support {
+    background: url(https://s3-us-west-2.amazonaws.com/toybox-website-static-assets/robot-head.svg) no-repeat !important;
+    margin-top: 10px;
+    width: 34px !important;
+    height: 55px !important;
+    position: absolute !important;
+    background-repeat: no-repeat;
+    right: 0px; }
+    @media only screen and (max-width: 767px) {
+      nav .logo-small-right-support {
+        display: none; } }
   nav .logo-small {
     display: inline-block;
     margin: 22px 0px 0px 10px;

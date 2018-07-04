@@ -121,6 +121,20 @@ nav
       height: 55px !important;
     }
   }
+  .logo-small-right-support
+  {
+    background: url(https://s3-us-west-2.amazonaws.com/toybox-website-static-assets/robot-head.svg) no-repeat !important;
+    margin-top: 10px;
+    width: 34px !important;
+    height: 55px !important;
+    position: absolute !important;
+    background-repeat: no-repeat;
+    right: 0px;
+    @include respond-to(extra-small-windows)
+    {
+      display: none;
+    }
+  }
 
   .logo-small
   {

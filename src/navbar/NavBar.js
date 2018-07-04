@@ -13,26 +13,27 @@ class NavBarContainer extends React.Component {
     return true
   }
   renderMidNavbar(){
-
-    return (<span className="mid-navbar hidden-on-mobile">
-              <div className="mid-navbar-wrapper">
-                <div className="mid-navbar-btn-wrapper">
-                  <a href={ToyboxNavigationHelpers.getToysURL()} className="toys-tab hidden-on-mobile" rel="nofollow"><div id="toys-link"  >Toys</div></a>
-                  <div id="toys-tab-mid" className={"mid-nav-underline " }>
-                  </div>
-                </div>
-                <div className="mid-navbar-btn-wrapper">
-                  <a href={ToyboxNavigationHelpers.getStoreCatalogURL()} className="store-tab hidden-on-mobile "  rel="nofollow">Store</a>
-                  <div id="store-tab-mid" className={"mid-nav-underline " }>
-                  </div>
-                </div>
-                <div className="mid-navbar-btn-wrapper">
-                  <a href={ToyboxNavigationHelpers.getContactURL()} className="contact-tab hidden-on-mobile" rel="nofollow">Contact</a>
-                  <div id="contact-tab-mid" className={"mid-nav-underline " }>
-                  </div>
-                </div>
-              </div>
-            </span>)
+    return (
+      <span className="mid-navbar hidden-on-mobile">
+        <div className="mid-navbar-wrapper">
+          <div className="mid-navbar-btn-wrapper">
+            <a href={ToyboxNavigationHelpers.getToysURL()} className="toys-tab hidden-on-mobile" rel="nofollow"><div id="toys-link"  >Toys</div></a>
+            <div id="toys-tab-mid" className={"mid-nav-underline " }>
+            </div>
+          </div>
+          <div className="mid-navbar-btn-wrapper">
+            <a href={ToyboxNavigationHelpers.getStoreCatalogURL()} className="store-tab hidden-on-mobile "  rel="nofollow">Store</a>
+            <div id="store-tab-mid" className={"mid-nav-underline " }>
+            </div>
+          </div>
+          <div className="mid-navbar-btn-wrapper">
+            <a href={ToyboxNavigationHelpers.getContactURL()} className="contact-tab hidden-on-mobile" rel="nofollow">Contact</a>
+            <div id="contact-tab-mid" className={"mid-nav-underline " }>
+            </div>
+          </div>
+        </div>
+      </span>
+    )
   }
   render() {
 
@@ -61,25 +62,20 @@ class NavBarContainer extends React.Component {
                               </a>
                             </div>)
                         }
-                        {!this.props.user && !this.props.connecting &&
-                            (<div className="inline-wrapper sign-in-nav">
-                                {showStore && <a   rel="nofollow">store</a>}
-                                <a className="login-tab" rel="nofollow">Sign In</a>
-                            </div>)
-                        }
+                        <span><a rel="nofollow" className="logo-small-right-support" href={ToyboxNavigationHelpers.getToyboxHomeURL()}></a></span>
                         <a className="menu-btn" >MENU</a>
                       </div>
                     </span>
                   </div>
                 <div className="top-left corner">
                   {topLeftLabel.label ?
-                      (<span><a rel="nofollow"  className="logo-small"></a>
+                      (<span><a rel="nofollow" className="logo-small" href={ToyboxNavigationHelpers.getToyboxHomeURL()}></a>
                       <div className="dual-nav divider"></div>
                       <a rel="nofollow"
                           className={"dual-nav text " + slide}>{topLeftLabel.label}</a></span>)
 
                       :
-                      (<a rel="nofollow" className="logo"></a>)
+                      (<a rel="nofollow" className="logo" href={ToyboxNavigationHelpers.getToyboxHomeURL()}></a>)
                   }
                 </div>
               </div>

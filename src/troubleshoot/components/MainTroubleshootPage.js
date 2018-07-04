@@ -25,11 +25,11 @@ class MainTroubleshootPage extends Component {
       <div className="main-troubleshoot">
         {component}
         <div className="center-div">
-          <i className="fa fa-github"></i> This page is open source. Check out our repo <a href={ToyboxNavigationHelpers.getGithubRepoURL()}>here</a>.
+          <i className="fa fa-github"></i> This page is open source. Help out the community by contributing <a href={ToyboxNavigationHelpers.getGithubRepoURL()}>here</a>.
         </div>
         <div className="small-divider"></div>
         <div className="center-div">
-          Are we missing something? You can post an issue <a href={ToyboxNavigationHelpers.getGithubNewIssueURL()}>here</a>
+          Are we missing something? Post an issue <a href={ToyboxNavigationHelpers.getGithubNewIssueURL()}>here</a>.
         </div>
 
       </div>

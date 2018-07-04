@@ -1,6 +1,38 @@
 /* COLORS */
 /*Top level variables*/
 /*#00BEF3*/
+@media (min-width: 767px) {
+  .desktop-only {
+    display: block !important; }
+  .mobile-only {
+    display: none !important; } }
+
+@media (max-width: 767px) {
+  .mobile-only {
+    display: block !important; }
+  .desktop-only {
+    display: none !important; } }
+
+@media (max-width: 769px) {
+  .ipad-or-smaller {
+    display: block !important; }
+  .ipad-or-bigger {
+    display: none !important; } }
+
+@media (min-width: 770px) {
+  .ipad-or-bigger {
+    display: block !important; }
+  .ipad-or-smaller {
+    display: none !important; } }
+
+@media only screen and (max-width: 767px) {
+  .hidden-on-mobile {
+    display: none; } }
+
+@media only screen and (min-width: 767px) {
+  .hidden-on-desktop {
+    display: none; } }
+
 .troubleshootRoute {
   background-color: #f1f5f9; }
 
