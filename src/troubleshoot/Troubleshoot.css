@@ -164,6 +164,17 @@
     font-size: 13px; }
   .troubleshoot .expandable .fa {
     margin-right: 5px; }
+  .troubleshoot .subsec-title .fa {
+    margin-right: 5px; }
+  .troubleshoot .small-divider {
+    max-width: 500px;
+    margin: 10px;
+    background-color: #efefef;
+    height: 1px;
+    margin: 0 auto; }
+  .troubleshoot .fa-github {
+    font-size: 1.7em;
+    vertical-align: bottom; }
 
 @keyframes expandSection {
   0% {

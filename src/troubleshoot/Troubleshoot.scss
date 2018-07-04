@@ -252,6 +252,23 @@
   {
     margin-right: 5px;
   }
+  .subsec-title .fa
+  {
+    margin-right: 5px;
+  }
+  .small-divider
+  {
+    max-width:500px;
+    margin: 10px;
+    background-color: #efefef;
+    height: 1px;
+    margin: 0 auto;
+  }
+  .fa-github
+  {
+    font-size: 1.7em;
+    vertical-align: bottom;
+  }
 }
 
 @keyframes expandSection

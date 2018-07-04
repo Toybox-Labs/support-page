@@ -29,7 +29,10 @@ body.avenirLoaded
   font-weight:300;
   margin-bottom:20px;
   text-align:center;
-
+}
+a
+{
+  text-decoration: none;
 }
 /*
 .troubleshootRoute

@@ -2,6 +2,7 @@ import React from 'react'
 import './NavBar.css';
 import PropTypes from 'prop-types'
 import DeviceHelpers from '../helpers/DeviceHelpers'
+import ToyboxNavigationHelpers from '../helpers/ToyboxNavigationHelpers'
 
 class NavBarContainer extends React.Component {
   constructor(){
@@ -16,17 +17,17 @@ class NavBarContainer extends React.Component {
     return (<span className="mid-navbar hidden-on-mobile">
               <div className="mid-navbar-wrapper">
                 <div className="mid-navbar-btn-wrapper">
-                  <a className="toys-tab hidden-on-mobile" rel="nofollow"><div id="toys-link"  >Toys</div></a>
+                  <a href={ToyboxNavigationHelpers.getToysURL()} className="toys-tab hidden-on-mobile" rel="nofollow"><div id="toys-link"  >Toys</div></a>
                   <div id="toys-tab-mid" className={"mid-nav-underline " }>
                   </div>
                 </div>
                 <div className="mid-navbar-btn-wrapper">
-                  <a  className="store-tab hidden-on-mobile "  rel="nofollow">Store</a>
+                  <a href={ToyboxNavigationHelpers.getStoreCatalogURL()} className="store-tab hidden-on-mobile "  rel="nofollow">Store</a>
                   <div id="store-tab-mid" className={"mid-nav-underline " }>
                   </div>
                 </div>
                 <div className="mid-navbar-btn-wrapper">
-                  <a  className="contact-tab hidden-on-mobile" rel="nofollow">Contact</a>
+                  <a href={ToyboxNavigationHelpers.getContactURL()} className="contact-tab hidden-on-mobile" rel="nofollow">Contact</a>
                   <div id="contact-tab-mid" className={"mid-nav-underline " }>
                   </div>
                 </div>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import TroubleshootNavigationPanel from './elements/TroubleshootNavigationPanel'
-import MainTroubleshootPage from './elements/MainTroubleshootPage'
+import TroubleshootNavigationPanel from './components/TroubleshootNavigationPanel'
+import MainTroubleshootPage from './components/MainTroubleshootPage'
 import './Troubleshoot.css';
 class Troubleshoot extends Component {
   constructor(){

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import TroubleshootQuestionLink from '../elements/TroubleshootQuestionLink'
-import TroubleshootQuestionTitle from '../elements/TroubleshootQuestionTitle'
+import TroubleshootQuestionLink from '../components/TroubleshootQuestionLink'
+import TroubleshootQuestionTitle from '../components/TroubleshootQuestionTitle'
 
 class SetupTroubleshoot extends Component {
   render() {
