@@ -29,6 +29,10 @@ ToyboxNavigationHelpers.getGithubNewIssueURL = function(){
   return 'https://github.com/Toybox-Labs/support-page/issues/new'
 }
 
+ToyboxNavigationHelpers.getToyboxProfileURL = function(){
+  return 'https://www.make.toys/profile'
+}
+
 ToyboxNavigationHelpers.goToToyboxHome = function(){
   window.location = ToyboxNavigationHelpers.getToyboxHomeURL()
 }
