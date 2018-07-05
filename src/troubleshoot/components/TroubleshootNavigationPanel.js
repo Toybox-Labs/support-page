@@ -17,28 +17,11 @@ class TroubleshootNavigationSection extends Component {
 
 class TroubleshootNavigationPanel extends Component {
   render() {
-    const navigationSections = [
-      {
-        name:'Setup'
-        , id: 'setup'
-      }
-      , {
-        name:'Print Quality'
-        , id: 'quality'
-      }
-      , {
-        name:'Mechanical'
-        , id: 'mechanical'
-      }
-      , {
-        name:'Account'
-        , id: 'account'
-      }
-    ]
+    let navSections = this.props ? this.props.navSections : []
     let selectedSection = this.props ? this.props.selectedSection : 'account'
     return (
       <div className="t-nav-panel">
-        {navigationSections.map(function(navsec, i){
+        {navSections.map(function(navsec, i){
           return <TroubleshootNavigationSection navsec={navsec} onClick={this} selectedSection={selectedSection}/>;
         }, this.props.handleNavigationSectionClick)}
       </div>

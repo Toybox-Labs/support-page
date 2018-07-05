@@ -207,6 +207,8 @@
   .troubleshoot .fa-github {
     font-size: 1.7em;
     vertical-align: bottom; }
+  .troubleshoot .section-selector {
+    font-size: 17px; }
 
 @keyframes expandSection {
   0% {
