@@ -11,16 +11,16 @@ class MainTroubleshootPage extends Component {
     let navSections = this.props ? this.props.navSections : []
     switch(this.props.section){
       case 'mechanical':
-        component = <MechanicalTroubleshoot section={this.props.section}/>
+        component = <MechanicalTroubleshoot section={this.props.section} expandedQuestion={this.props.expandedQuestion}/>
         break;
       case 'quality':
-        component = <PrintQualityTroubleshoot section={this.props.section}/>
+        component = <PrintQualityTroubleshoot section={this.props.section} expandedQuestion={this.props.expandedQuestion}/>
         break;
       case 'setup':
-        component = <SetupTroubleshoot section={this.props.section}/>
+        component = <SetupTroubleshoot section={this.props.section} expandedQuestion={this.props.expandedQuestion}/>
         break;
       default:
-        component = <AccountTroubleshoot section={this.props.section}/>
+        component = <AccountTroubleshoot section={this.props.section} expandedQuestion={this.props.expandedQuestion}/>
     }
     return (
       <div className="main-troubleshoot">
