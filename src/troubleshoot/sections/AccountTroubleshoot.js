@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import TroubleshootQuestionLink from '../components/TroubleshootQuestionLink'
 import TroubleshootQuestionTitle from '../components/TroubleshootQuestionTitle'
+import ToyboxNavigationHelpers from '../../helpers/ToyboxNavigationHelpers'
 
 class AccountTroubleshoot extends Component {
   render() {
@@ -12,7 +13,7 @@ class AccountTroubleshoot extends Component {
           <TroubleshootQuestionTitle title="How do I change my password?" metaobject={this} />
           <div className="sec-body">
             <p>
-              You can find the option to change your password on your <a className="blue-link" href="/profile" target="_blank">profile view</a>.
+              You can find the option to change your password on your <a className="blue-link" href={ToyboxNavigationHelpers.getToyboxProfileURL()} target="_blank">profile view</a>.
             </p>
             <TroubleshootQuestionLink metaobject={this} questionId="atq1"/>
           </div>
@@ -22,7 +23,7 @@ class AccountTroubleshoot extends Component {
           <TroubleshootQuestionTitle title="How do I change my password if I forgot it?" metaobject={this}/>
           <div className="sec-body">
             <p>
-              When you click sign in, there is an option there that says "I forgot my password". <a className="blue-link" href="/reset_password">This link</a> will take you to the flow.
+              When you click sign in, there is an option there that says "I forgot my password". <a className="blue-link" href={ToyboxNavigationHelpers.getToyboxResetPasswordURL()}>This link</a> will take you to the flow.
             </p>
             <TroubleshootQuestionLink metaobject={this} questionId="atq2"/>
           </div>

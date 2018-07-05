@@ -33,6 +33,10 @@ ToyboxNavigationHelpers.getToyboxProfileURL = function(){
   return 'https://www.make.toys/profile'
 }
 
+ToyboxNavigationHelpers.getToyboxResetPasswordURL = function(){
+  return 'https://www.make.toys/reset_password'
+}
+
 ToyboxNavigationHelpers.goToToyboxHome = function(){
   window.location = ToyboxNavigationHelpers.getToyboxHomeURL()
 }
