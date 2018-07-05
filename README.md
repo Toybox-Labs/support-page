@@ -2,7 +2,7 @@
 
 ## Overview
 
-Welcome to the [https://www.make.toys](Toybox's) troubleshooting repo! Thanks for checking us out. We would love for you to contribute.
+Welcome to the [Toybox's](https://www.make.toys) troubleshooting repo! Thanks for checking us out. We would love for you to contribute.
 
 You can submit pull requests if you want to help!
 
