@@ -201,7 +201,7 @@
   .troubleshoot .small-divider {
     max-width: 500px;
     margin: 10px;
-    background-color: #efefef;
+    background-color: #bbbbbb;
     height: 1px;
     margin: 0 auto; }
   .troubleshoot .fa-github {
@@ -209,6 +209,8 @@
     vertical-align: bottom; }
   .troubleshoot .section-selector {
     font-size: 17px; }
+  .troubleshoot .open-source-message {
+    width: 90%; }
 
 @keyframes expandSection {
   0% {

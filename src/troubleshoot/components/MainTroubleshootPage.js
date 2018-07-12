@@ -23,23 +23,26 @@ class MainTroubleshootPage extends Component {
         component = <AccountTroubleshoot section={this.props.section} expandedQuestion={this.props.expandedQuestion}/>
     }
     return (
-      <div className="main-troubleshoot">
-        <div className="mobile-selector-wrapper">
-          <select className="section-selector" onChange={this.props.handleNavigationSectionClick}>
-            {navSections.map(function(navsec, i){
-              return <option className="section-option"  value={navsec.id} >{navsec.name}</option>
-            })}
-          </select>
+      <div>
+        <div className="main-troubleshoot">
+          <div className="mobile-selector-wrapper">
+            <select className="section-selector" onChange={this.props.handleNavigationSectionClick}>
+              {navSections.map(function(navsec, i){
+                return <option className="section-option"  value={navsec.id} >{navsec.name}</option>
+              })}
+            </select>
+          </div>
+          {component}
         </div>
-        {component}
-        <div className="center-div">
-          <i className="fa fa-github"></i> This page is open source. Help out the community by contributing <a href={ToyboxNavigationHelpers.getGithubRepoURL()}>here</a>.
+        <div className="open-source-message">
+          <div className="center-div">
+            <i className="fa fa-github"></i> This page is open source. Help out the community by contributing <a href={ToyboxNavigationHelpers.getGithubRepoURL()}>here</a>.
+          </div>
+          <div className="small-divider"></div>
+          <div className="center-div">
+            Are we missing something? Post an issue <a href={ToyboxNavigationHelpers.getGithubNewIssueURL()}>here</a>.
+          </div>
         </div>
-        <div className="small-divider"></div>
-        <div className="center-div">
-          Are we missing something? Post an issue <a href={ToyboxNavigationHelpers.getGithubNewIssueURL()}>here</a>.
-        </div>
-
       </div>
     );
   }
