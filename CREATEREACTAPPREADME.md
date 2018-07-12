@@ -708,7 +708,7 @@ If you put a file into the `public` folder, it will **not** be processed by Webp
 Inside `index.html`, you can use it like this:
 
 ```html
-<link rel="shortcut icon" href="https://s3-us-west-2.amazonaws.com/toybox-website-static-assets/favicon.gif">
+<link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
 ```
 
 Only files inside the `public` folder will be accessible by `%PUBLIC_URL%` prefix. If you need to use a file from `src` or `node_modules`, you’ll have to copy it there to explicitly specify your intention to make this file a part of the build.
