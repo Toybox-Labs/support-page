@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import 'font-awesome/css/font-awesome.min.css';
 import NavBarContainer from './navbar/NavBar'

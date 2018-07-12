@@ -14,7 +14,7 @@ body.avenirLoaded
 @font-face
 {
   font-family: IconFont;
-  src: url('/fonts/toybox-glyphs.ttf?v=1.6');
+  src: url("https://s3-us-west-2.amazonaws.com/toybox-website-static-assets/robot-head.svg");
   font-display: block;
 }
 

@@ -18,6 +18,7 @@ class Troubleshoot extends Component {
         section = event.target.classList[1]
       }
     }
+    window.location.hash = '#section=' + section
     this.setState({
       section:section
     })

@@ -113,7 +113,7 @@ nav {
         width: 34px !important;
         height: 55px !important; } }
   nav .logo-small-right-support {
-    background: url(https://s3-us-west-2.amazonaws.com/toybox-website-static-assets/robot-head.svg) no-repeat !important;
+    background: url("https://s3-us-west-2.amazonaws.com/toybox-website-static-assets/robot-head.svg") no-repeat !important;
     margin-top: 10px;
     width: 34px !important;
     height: 55px !important;
@@ -132,7 +132,7 @@ nav {
     background-repeat: no-repeat; }
     @media only screen and (max-width: 767px) {
       nav .logo-small {
-        background: url("/icons/robot-head.svg") no-repeat !important;
+        background: url("https://s3-us-west-2.amazonaws.com/toybox-website-static-assets/robot-head.svg") no-repeat !important;
         margin-top: 5px;
         width: 34px !important;
         height: 55px !important; } }
