@@ -19,7 +19,7 @@ class PrinterQualityTroubleshoot extends Component {
             </p>
             <img className="portrait" src="https://s3-us-west-2.amazonaws.com/toybox-website-static-assets/toybox_correct_way_to_load_printer_food_roll.JPG"/>
             <img className="portrait" src="https://s3-us-west-2.amazonaws.com/toybox-website-static-assets/toybox_wrong_way_to_load_printer_food_roll.JPG"/>
-            <TroubleshootQuestionLink metaobject={this} questionId="pqq1"/>
+            <TroubleshootQuestionLink metaobject={this} questionId="pqq1" section="quality"/>
           </div>
         </div>
 
@@ -32,7 +32,7 @@ class PrinterQualityTroubleshoot extends Component {
             <p>
               To prevent warpage, try pointing a fan on your printer while it prints, that should help.
             </p>
-            <TroubleshootQuestionLink metaobject={this} questionId="pqq2"/>
+            <TroubleshootQuestionLink metaobject={this} questionId="pqq2" section="quality"/>
           </div>
         </div>
 
@@ -57,7 +57,7 @@ class PrinterQualityTroubleshoot extends Component {
                 <img className="portrait" src="https://s3-us-west-2.amazonaws.com/toybox-website-static-assets/ToyboxFirstLayer.jpg"/>
               </p>
             </div>
-            <TroubleshootQuestionLink metaobject={this} questionId="pqq3"/>
+            <TroubleshootQuestionLink metaobject={this} questionId="pqq3" section="quality"/>
           </div>
         </div>
 
@@ -82,7 +82,7 @@ class PrinterQualityTroubleshoot extends Component {
             <p>
               <img className="portrait" src="https://s3-us-west-2.amazonaws.com/toybox-website-static-assets/ToyboxFirstLayer.jpg"/>
             </p>
-            <TroubleshootQuestionLink metaobject={this} questionId="pqq4"/>
+            <TroubleshootQuestionLink metaobject={this} questionId="pqq4" section="quality"/>
           </div>
         </div>
 
@@ -133,7 +133,7 @@ class PrinterQualityTroubleshoot extends Component {
               </div>
             </div>
 
-            <TroubleshootQuestionLink metaobject={this} questionId="pqq5"/>
+            <TroubleshootQuestionLink metaobject={this} questionId="pqq5" section="quality"/>
 
           </div>
         </div>

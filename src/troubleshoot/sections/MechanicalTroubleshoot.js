@@ -90,7 +90,7 @@ class MechanicalTroubleshoot extends Component {
               </ol>
             </div>
           </div>
-          <TroubleshootQuestionLink metaobject={this} questionId="mtq1"/>
+          <TroubleshootQuestionLink metaobject={this} questionId="mtq1" section="mechanical"/>
         </div>
       </div>
 
@@ -127,7 +127,7 @@ class MechanicalTroubleshoot extends Component {
             </li>
             <li> If this is on the Z axis (The print bed switch). Then you will likely need to calibrate your printer. Please see the calibration instructions on the calibration section below. </li>
           </ol>
-          <TroubleshootQuestionLink metaobject={this} questionId="mtq2"/>
+          <TroubleshootQuestionLink metaobject={this} questionId="mtq2" section="mechanical"/>
         </div>
       </div>
 
@@ -152,14 +152,14 @@ class MechanicalTroubleshoot extends Component {
           <p>
             <img className="portrait" src="https://s3-us-west-2.amazonaws.com/toybox-website-static-assets/ToyboxFirstLayer.jpg"/><br/>
           </p>
-          <TroubleshootQuestionLink metaobject={this} questionId="mtq3"/>
+          <TroubleshootQuestionLink metaobject={this} questionId="mtq3" section="mechanical"/>
         </div>
       </div>
       <div className="issue-sec" id="mtq4">
         <TroubleshootQuestionTitle title="My device arrived damaged!" metaobject={this}/>
         <div className="sec-body">
           That is no good! Please contact us immediately at support@make.toys so that we can help you. Please provide a description of the problem and provide pictures and/or a video if possible.
-          <TroubleshootQuestionLink metaobject={this} questionId="mtq3"/>
+          <TroubleshootQuestionLink metaobject={this} questionId="mtq4" section="mechanical"/>
         </div>
       </div>
       </div>

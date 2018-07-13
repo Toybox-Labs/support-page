@@ -40,7 +40,7 @@ class SetupTroubleshoot extends Component {
                 If you are still having problems connecting to the Toybox network, please contact us at “support@make.toys” so we can personally help guide and debug you through the process.
               </li>
             </ol>
-            <TroubleshootQuestionLink metaobject={this} questionId="sq1"/>
+            <TroubleshootQuestionLink metaobject={this} questionId="sq1" section="account"/>
           </div>
         </div>
 
@@ -59,7 +59,7 @@ class SetupTroubleshoot extends Component {
               <li> Wifi router does not have a static IP address (By default, your router probably will not have this setting) </li>
               <li> If you are still having trouble finding your network. You can alternatively turn your phone as a hotspot and use that </li>
             </ol>
-            <TroubleshootQuestionLink metaobject={this} questionId="sq2"/>
+            <TroubleshootQuestionLink metaobject={this} questionId="sq2" section="account"/>
           </div>
         </div>
 
@@ -74,7 +74,7 @@ class SetupTroubleshoot extends Component {
               <li>Click on the account button, there should now be a code that displays on the screen.</li>
             </ol>
             <p> If the printer stays in loading when you try to get the code, it means that the printer is having a difficult time reaching the server. This is most likely due to a poor internet connection. Please make sure you have a constant and reliable internet connection</p>
-            <TroubleshootQuestionLink metaobject={this} questionId="sq3"/>
+            <TroubleshootQuestionLink metaobject={this} questionId="sq3" section="account"/>
           </div>
         </div>
 
@@ -83,7 +83,7 @@ class SetupTroubleshoot extends Component {
           <div className="sec-body">
             <p>If the printer LCD screen stays in loading for a long time, it is likely that your printer is not connected to the internet. Please make sure to keep your printer no more than 20 feet away from the router.</p>
             <p>If you are on a reliable connection, and the screen is stuck at loading for more than 4 minutes, please send send us an email through <a className="blue-link contact-link-problems">here</a>.</p>
-            <TroubleshootQuestionLink metaobject={this} questionId="sq4"/>
+            <TroubleshootQuestionLink metaobject={this} questionId="sq4" section="account"/>
           </div>
         </div>
         <div className="issue-sec" id="sq5">
@@ -91,21 +91,21 @@ class SetupTroubleshoot extends Component {
           <div className="sec-body">
             <p>You can find the iOS app <a className="blue-link" href="https://itunes.apple.com/us/app/toybox-3d-print-your-own-toys!/id1166269606?ls=1&mt=8" target="_blank">here</a> and the Android app <a className="blue-link" href="https://play.google.com/store/apps/details?id=com.toybox" target="_blank">here</a>.</p>
             <p> If you want to search in the app store or google play store. Try searching “Toybox 3D Printer.” It should be the first one to come up, it’s orange and has the Toybot, robot as the image. </p>
-            <TroubleshootQuestionLink metaobject={this} questionId="sq5"/>
+            <TroubleshootQuestionLink metaobject={this} questionId="sq5" section="account"/>
           </div>
         </div>
         <div className="issue-sec" id="sq6">
           <TroubleshootQuestionTitle title="I can't find the desktop app" metaobject={this}/>
           <div className="sec-body">
             <p>Welcome to the future! You can control your Toybox printer through the website. You can choose a toy from the <a className="blue-link" href="/toys" target="_blank">catalog</a> or go to the <a className="blue-link" href="/custom-toys" target="_blank">creator space</a> to create your own! Just make sure that you are logged into an account that is connected to your printer</p>
-            <TroubleshootQuestionLink metaobject={this} questionId="sq6"/>
+            <TroubleshootQuestionLink metaobject={this} questionId="sq6" section="account"/>
           </div>
         </div>
         <div className="issue-sec" id="sq7">
           <TroubleshootQuestionTitle title="I can't find the drivers for the printer" metaobject={this}/>
           <div className="sec-body">
             <p>Since you can control your printer remotely through our app or website, there is no need for drivers :)</p>
-            <TroubleshootQuestionLink metaobject={this} questionId="sq7"/>
+            <TroubleshootQuestionLink metaobject={this} questionId="sq7" section="account"/>
           </div>
         </div>
       </div>

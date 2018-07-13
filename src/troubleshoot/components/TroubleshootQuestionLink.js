@@ -13,7 +13,7 @@ class TroubleshootQuestionLink extends Component {
   getLink(){
     let link = window.location.origin + window.location.pathname
     let id = this.props.questionId
-    let section = this.props.metaobject.props.section
+    let section = this.props.section
     if(id){
       link += '#section=' + section + '&question=' + id
     }
