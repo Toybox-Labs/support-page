@@ -124,6 +124,7 @@
     border-radius: 4px;
     box-shadow: 0 2px 15px rgba(84,96,103,.25);
     overflow: hidden;
+    padding-bottom: 40px;
     @include respond-to(not-extra-small-windows)
     {
       width: 90%;
@@ -276,6 +277,10 @@
   .open-source-message
   {
     width: 90%;
+    @include respond-to(extra-small-windows)
+    {
+      margin: 0 auto;
+    }
   }
 }
 

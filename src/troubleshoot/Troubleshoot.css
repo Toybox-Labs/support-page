@@ -118,7 +118,8 @@
     padding: 10px;
     border-radius: 4px;
     box-shadow: 0 2px 15px rgba(84, 96, 103, 0.25);
-    overflow: hidden; }
+    overflow: hidden;
+    padding-bottom: 40px; }
     @media only screen and (min-width: 767px) {
       .troubleshoot .main-troubleshoot {
         width: 90%; } }
@@ -211,6 +212,9 @@
     font-size: 17px; }
   .troubleshoot .open-source-message {
     width: 90%; }
+    @media only screen and (max-width: 767px) {
+      .troubleshoot .open-source-message {
+        margin: 0 auto; } }
 
 @keyframes expandSection {
   0% {

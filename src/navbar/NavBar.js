@@ -54,16 +54,8 @@ class NavBarContainer extends React.Component {
                       <div className="top-right-wrapper">
 
 
-
-                        {this.props.user &&
-                            (<div className="navbar-icon">
-                              <a className="account-btn" rel="nofollow">
-                                <div className="icon">a</div>
-                              </a>
-                            </div>)
-                        }
                         <span><a rel="nofollow" className="logo-small-right-support" href={ToyboxNavigationHelpers.getToyboxHomeURL()}></a></span>
-                        <a className="menu-btn" >MENU</a>
+                        
                       </div>
                     </span>
                   </div>
