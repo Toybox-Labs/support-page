@@ -3,6 +3,7 @@ import TroubleshootNavigationPanel from './components/TroubleshootNavigationPane
 import MainTroubleshootPage from './components/MainTroubleshootPage'
 import './Troubleshoot.css';
 import $ from "jquery"
+import { strings } from './strings';
 
 class Troubleshoot extends Component {
   constructor(){
@@ -89,19 +90,19 @@ class Troubleshoot extends Component {
     let expandedQuestion = params.qid
     const navigationSections = [
       {
-        name:'Setup'
+        name: strings.SetupTitle
         , id: 'setup'
       }
       , {
-        name:'Print Quality'
+        name:strings.PrintQualityTitle
         , id: 'quality'
       }
       , {
-        name:'Mechanical'
+        name:strings.MechanicalTitle
         , id: 'mechanical'
       }
       , {
-        name:'Account'
+        name:strings.AccountTitle
         , id: 'account'
       }
     ]

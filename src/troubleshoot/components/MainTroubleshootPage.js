@@ -4,6 +4,7 @@ import MechanicalTroubleshoot from '../sections/MechanicalTroubleshoot'
 import PrintQualityTroubleshoot from '../sections/PrintQualityTroubleshoot'
 import SetupTroubleshoot from '../sections/SetupTroubleshoot'
 import ToyboxNavigationHelpers from '../../helpers/ToyboxNavigationHelpers'
+import { strings } from '../strings';
 
 class MainTroubleshootPage extends Component {
   render() {
@@ -36,11 +37,11 @@ class MainTroubleshootPage extends Component {
         </div>
         <div className="open-source-message">
           <div className="center-div">
-            <i className="fa fa-github"></i> This page is open source. Help out the community by contributing <a href={ToyboxNavigationHelpers.getGithubRepoURL()}>here</a>.
+            <i className="fa fa-github"></i> {strings.OpenSourceMessage} <a href={ToyboxNavigationHelpers.getGithubRepoURL()}>{strings.OpenSourceA1}</a>.
           </div>
           <div className="small-divider"></div>
           <div className="center-div">
-            Are we missing something? Post an issue <a href={ToyboxNavigationHelpers.getGithubNewIssueURL()}>here</a>.
+            {strings.MissingSomething}<a href={ToyboxNavigationHelpers.getGithubNewIssueURL()}>{strings.MissingSomethingA1}</a>.
           </div>
         </div>
       </div>

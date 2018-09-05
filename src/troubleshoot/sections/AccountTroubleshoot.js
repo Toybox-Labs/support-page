@@ -2,55 +2,56 @@ import React, { Component } from 'react';
 import TroubleshootQuestionLink from '../components/TroubleshootQuestionLink'
 import TroubleshootQuestionTitle from '../components/TroubleshootQuestionTitle'
 import ToyboxNavigationHelpers from '../../helpers/ToyboxNavigationHelpers'
+import { strings } from '../strings';
 
 class AccountTroubleshoot extends Component {
   render() {
     return (
       <div>
-        <div className="title">Account</div>
+        <div className="title">{strings.AccountTitle}</div>
         <div className="title-sep"></div>
         <div className="issue-sec" id="atq1">
-          <TroubleshootQuestionTitle title="How do I change my password?" metaobject={this} />
+          <TroubleshootQuestionTitle title={strings.ChangePasswordTitle} metaobject={this} />
           <div className="sec-body">
             <p>
-              You can find the option to change your password on your <a className="blue-link" href={ToyboxNavigationHelpers.getToyboxProfileURL()} target="_blank">profile view</a>.
+              {strings.ChangePasswordP1} <a className="blue-link" href={ToyboxNavigationHelpers.getToyboxProfileURL()} target="_blank">{strings.ChangePasswordL1}</a>.
             </p>
             <TroubleshootQuestionLink metaobject={this} questionId="atq1" section="account"/>
           </div>
         </div>
 
         <div className="issue-sec" id="atq2">
-          <TroubleshootQuestionTitle title="How do I change my password if I forgot it?" metaobject={this}/>
+          <TroubleshootQuestionTitle title={strings.ForgotPasswordTitle} metaobject={this}/>
           <div className="sec-body">
             <p>
-              When you click sign in, there is an option there that says "I forgot my password". <a className="blue-link" href={ToyboxNavigationHelpers.getToyboxResetPasswordURL()}>This link</a> will take you to the flow.
+            {strings.ForgotPasswordP1} <a className="blue-link" href={ToyboxNavigationHelpers.getToyboxResetPasswordURL()}>{strings.ForgotPasswordL1}</a> {strings.ForgotPasswordP2}
             </p>
             <TroubleshootQuestionLink metaobject={this} questionId="atq2" section="account"/>
           </div>
         </div>
 
         <div className="issue-sec" id="atq3">
-          <TroubleshootQuestionTitle title="Why do I have to provide my birthday?" metaobject={this} />
+          <TroubleshootQuestionTitle title={strings.BirthdayTitle} metaobject={this} />
           <div className="sec-body">
             <p>
-              We need to get your birthday in order to make sure that we comply with Child Online Protection Act (COPA). COPPA imposes certain requirements on operators of websites or online services directed to children under 13 years of age. You can learn more about COPA <a className="blue-link" href="https://www.ftc.gov/enforcement/rules/rulemaking-regulatory-reform-proceedings/childrens-online-privacy-protection-rule" target="_blank">here</a>.
+              {strings.BirthdayP1} <a className="blue-link" href="https://www.ftc.gov/enforcement/rules/rulemaking-regulatory-reform-proceedings/childrens-online-privacy-protection-rule" target="_blank">{strings.BirthdayL1}</a>
             </p>
             <TroubleshootQuestionLink metaobject={this} questionId="atq3" section="account"/>
           </div>
         </div>
         <div className="issue-sec" id="atq4">
-            <TroubleshootQuestionTitle title="How do I disable my child's account?" metaobject={this} />
+            <TroubleshootQuestionTitle title={strings.DisableAccountTitle} metaobject={this} />
           <div className="sec-body">
-            <p>At Toybox, we keep as little data as possible to protect your childs privacy. However, we keep some data in order to allow your child to use their printer. This includes hosting their toy designs on our website so that they can be sent to their printer.</p>
-            <p>We want to make sure you have control over any data we keep for your child. If at anytime you want us to remove information about your child or would like to know more, please send an email to support@make.toys and one of our friendly Toybox assistants will help you. :)</p>
-            <p>If you don't approve of your child's membership registration, send an email to support@make.toys.</p>
+            <p>{strings.DisableAccountP1}</p>
+            <p>{strings.DisableAccountP2}</p>
+            <p>{strings.DisableAccountP3}</p>
             <TroubleshootQuestionLink metaobject={this}  questionId="atq4" section="account"/>
           </div>
         </div>
         <div className="issue-sec" id="atq5">
-          <TroubleshootQuestionTitle title="I can't create an account through Facebook" metaobject={this} />
+          <TroubleshootQuestionTitle title={strings.FacebookProblemTitle} metaobject={this} />
           <div className="sec-body">
-            If you are having issues, please send us an email through <a className="crete-using-fb-problems blue-link">here</a>.
+            {strings.FacebookProblemP1} <a className="crete-using-fb-problems blue-link">{strings.FacebookProblemL1}</a>.
             <TroubleshootQuestionLink metaobject={this}  questionId="atq5" section="account"/>
           </div>
         </div>
