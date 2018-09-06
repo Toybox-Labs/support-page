@@ -95,10 +95,10 @@ class PrinterQualityTroubleshoot extends Component {
               <div className="subsec-body">
                 <div>
                   <p>
-                    Every once in awhile there can be be a knot in the printer-food roll. This can prevent the printer-food roll from unrolling and properly feeding into the printer. Check the roll and make sure there isn’t a knot and you can freely roll and unroll the printer food roll by pulling lightly on the printer food sticking out of the roll.
+                    {strings.ShiftingSubtitle1P1}
                   </p>
                   <p>
-                    If there is a knot, remove your printer food from the printer and undo the knot. The printer should then be ready to go!
+                    {strings.ShiftingSubtitle1P2}
                   </p>
                 </div>
               </div>
@@ -109,10 +109,10 @@ class PrinterQualityTroubleshoot extends Component {
               <div className="subsec-body">
                 <div>
                   <p>
-                    The printer food actually has a right and wrong direction to face when putting it on the back of your Toybox. In one direction, the printer food is much looser than the other direction. You want your printer food to be as loose as possible to make sure the Toybox has an easy time eating the printer food.
+                    {strings.ShiftingSubtitle2P1}
                   </p>
                   <p>
-                    To make sure the printer food is as loose as possible, you want to make sure the solid side of the roll is facing outward. See the picture below.
+                    {strings.ShiftingSubtitle2P2}
                   </p>
                 </div>
                 <img className="portrait" src="https://s3-us-west-2.amazonaws.com/toybox-website-static-assets/toybox_correct_way_to_load_printer_food_roll.JPG"/>
@@ -125,7 +125,7 @@ class PrinterQualityTroubleshoot extends Component {
               <div className="subsec-body">
                 <div>
                   <p>
-                    A good printer-food spool holder is necessary for prints to come out correctly. Otherwise the Toybox won’t eat the food correctly and nothing will flow out of the printer. You can test if this is the issue by allowing a foot or two of loose slack and then trying to print. If your Toybox can suddenly print, it means that the printer isn’t strong enough to pull the spool.
+                    {strings.ShiftingSubtitle3P1}
                   </p>
                 </div>
               </div>

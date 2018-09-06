@@ -24,11 +24,31 @@ export const strings = new LocalizedStrings({
     , NoPlasticTitle: "No plastic is coming out of my printer when I print!"
     , NoPlasticP1: 'Well that’s not good! Sounds like something is preventing your printer food from freely flowing through the printer. This could be caused by multiple reasons, lets go over some of the most common reasons why this could happen and hopefully we can figure this out. Check out some of the reasons below.'
     , NoPlasticSubtitle1: "Using an unsupported 3rd party filament"
+    , NoPlasticSubtitle1P1:"If you are using Toybox printer food, this will not be an issue, please go to the next step."
+    , NoPlasticSubtitle1P2: "  When buying filament from 3rd party sources, it’s very easy to end up with inconsistent sizes and materials of filament. Sometimes they can be labeled wrong. Sometimes the thickness of the filament can variate (sometimes to thin and too thick in different parts of the roll). If the filament is too thick, it will not be able to fit through the inner tubes of the extruder and nothing will come out. Please make sure you are using 1.75mm PLA filament. After that, double check that the thickness actually is 1.75mm with a caliper, or simply test with a little bit of Toybox printer food to make sure the filament is coming out correctly. Sometimes the thickness can be correct, but cheap manufacturers will make the filament out of a different type of material and label it as PLA."
     , NoPlasticSubtitle2: "Printer-Food doesn’t have a clean cut"
+    , NoPlasticSubtitle2P1:"Sometimes, when pulling printer-food out of the printer, the filament can form a little blob at the end. This can prevent the printer food from flowing freely through the extruder. To see if this is the problem do the following:"
+    , NoPlasticSubtitle2L1:"Pull the printer food out of the printer by clicking the gear icon on the printer’s LCD and then pressing the ‘ink’ button"
+    , NoPlasticSubtitle2L2: "Once the nozzle is heated to a high enough temperature to remove, the buttons on the LCD will turn white, this usually takes about 2 minutes "
+    , NoPlasticSubtitle2L3: "Keep pressing the “remove” button until you can freely pull the printer-food out of the top of the printer"
+    , NoPlasticSubtitle2L4: "Get a pair of scissors and cut off about an inch of printer-food from the spool "
+    , NoPlasticSubtitle2L5: "Take the printer food, and put it back into the extruder until it feels a little tight "
+    , NoPlasticSubtitle2L6: "Keep pressing the ‘“insert” button until filament comes out of the nozzle "
+    , NoPlasticSubtitle2L7: "Try to print something simple again like the toybox keychain "
+    , NoPlasticSubtitle2L8: " If the problem still persists, try  the next step "
     , NoPlasticSubtitle3: "Spool of printer food is tangled"
+    , NoPlasticSubtitle3P1: "Every once in a while there can be be a knot in the printer-food roll. This can prevent the printer-food roll from unrolling and properly feeding into the printer. Check the roll and make sure there isn’t a knot and you can freely roll and unroll the printer food roll by pulling lightly on the printer food sticking out of the roll."
+    , NoPlasticSubtitle3P2:"If there is a knot, remove your printer food from the printer and undo the knot. The printer should then be ready to go!"
     , NoPlasticSubtitle4: "Printer food spool is facing the wrong direction"
+    , NoPlasticSubtitle4P1: "The printer food actually has a right and wrong direction to face when putting it on the back of your Toybox. In one direction, the printer food is much looser than the other direction. You want your printer food to be as loose as possible to make sure the Toybox has an easy time eating the printer food."
+    , NoPlasticSubtitle4P2: "To make sure the printer food is as loose as possible, you want to make sure the solid side of the roll is facing outward. See the picture below."
     , NoPlasticSubtitle5: "Using a 3rd party spool holder, or not using one at all."
+    , NoPlasticSubtitle5P1:"  A good printer-food spool holder is necessary for prints to come out correctly. Otherwise the Toybox won’t eat the food correctly and nothing will flow out of the printer. You can test if this is the issue by allowing a foot or two of loose slack of printer-food and then trying to print. If your Toybox can suddenly print, it means that the printer isn’t strong enough to pull the spool."
     , NoPlasticSubtitle6: "I tried the above steps and nothing is still coming out of my printer!"
+    , NoPlasticSubtitle6P1: "Hmm, seems like you might either have a hardware issue or an uncommon issue. Please contact us at support@make.toys with the following information so we can personally help you figure this out. If possible, please try to send a video of the printer printing, it helps tremendously and we can usually figure out what is wrong right away with a good video."
+    , NoPlasticSubtitle6L1: "When printing, if you lightly hold the printer food feeding into the extruder, can you feel it clicking?"
+    , NoPlasticSubtitle6L2: "Is the extruder fan on? (You should hear it, it’s pretty loud)"
+    , NoPlasticSubtitle6L3: "Was this printer working before? Has anything changed since the last time it worked?"
     , GrindingNoseTitle: "My printer makes a grinding noise when it starts printing"
     , GrindingNoseP1: "Before starting the debugging process, please make sure the wire at the top is not tucked into the side of the case. Often, we tuck the wire into the side of the case to make for easier shipping, sometimes when this wire is stuck under the case, it can cause the printer from not reaching its home position correctly. Please see the image below:"
     , GrindingNoseP2: "If the wire is already untucked and free this usually means that for some reason, the switches that determine the ‘home’ position aren’t being triggered. Please find the 3 switches (X,Y,Z). Look at the picture for guidance. When pressing on those switches, they should make a ‘clicky’ noise."
@@ -69,8 +89,13 @@ export const strings = new LocalizedStrings({
     , ShiftingTitle: "My prints look like they have some weird shifting going on"
     , ShiftingP1:'This is most likely because something is preventing the motors on the XY plane to correctly move. Usually this means there is some type of resistance on the extruder, most often caused by it not being able to pull the filament roll. Please check the following:'
     , ShiftingSubtitle1: "Spool of printer food is tangled"
+    , ShiftingSubtitle1P1:"Every once in awhile there can be be a knot in the printer-food roll. This can prevent the printer-food roll from unrolling and properly feeding into the printer. Check the roll and make sure there isn’t a knot and you can freely roll and unroll the printer food roll by pulling lightly on the printer food sticking out of the roll."
+    , ShiftingSubtitle1P2: "If there is a knot, remove your printer food from the printer and undo the knot. The printer should then be ready to go!"
     , ShiftingSubtitle2: "Printer food spool is facing the wrong direction"
+    , ShiftingSubtitle2P1:"The printer food actually has a right and wrong direction to face when putting it on the back of your Toybox. In one direction, the printer food is much looser than the other direction. You want your printer food to be as loose as possible to make sure the Toybox has an easy time eating the printer food."
+    , ShiftingSubtitle2P2:"To make sure the printer food is as loose as possible, you want to make sure the solid side of the roll is facing outward. See the picture below."
     , ShiftingSubtitle3: "Using a 3rd party spool holder, or not using one at all."
+    , ShiftingSubtitle3P1:"A good printer-food spool holder is necessary for prints to come out correctly. Otherwise the Toybox won’t eat the food correctly and nothing will flow out of the printer. You can test if this is the issue by allowing a foot or two of loose slack and then trying to print. If your Toybox can suddenly print, it means that the printer isn’t strong enough to pull the spool."
     , SetupTitle: 'Setup'
     , CannotConnectTitle: "Help! I can't connect to the TOYBOX network"
     , CannotConnectP1: 'Shortly after connecting to the ‘TOYBOX’ network, a captive portal popup window should appear on your device. Here, you should be able to pick a home wifi network to connect to. If this  does not happen, please follow the following steps.'
@@ -140,11 +165,31 @@ export const strings = new LocalizedStrings({
     , NoPlasticTitle: "No está saliendo plástico de mi impresora."
     , NoPlasticP1: 'Puede que algo esta previniendo que su filamento fluya a través de la impresora. Esto pudiera ser causado por múltiples razones, a continuación, alguna de las razones más frecuentes por lo que esto pudiera estar sucediendo:'
     , NoPlasticSubtitle1: "Está utilizando un filamento de un proveedor externo."
+    , NoPlasticSubtitle1P1:"Si usted está utilizando filamento de Toybox, esto no debería de ser un problema, por favor diríjase al siguiente paso."
+    , NoPlasticSubtitle1P2:"Al comprar filamentos de proveedores externos, es posible que sean de tamaños y materiales no compatibles. En ocasiones pueden estar mal identificados o el grosor del filamento puede variar (muy delgado o muy grueso en distintas partes del rollo). Si el filamento es muy grueso no entrará en los tubos del extrusor y nada saldrá. Por favor asegúrese que está utilizando filamento PLA de 1.75mm. Puede confirmar que sea de este grosor utilizando un calibre o bien pruebe utilizar filamento de Toybox para asegurarse que este saliendo correctamente. En ocasiones el grosor puede estar correcto, pero proveedores de baja calidad utilizan distintos materiales para crear el filamento y luego lo etiquetan como PLA."
     , NoPlasticSubtitle2: "El filamento no tiene un corte limpio."
+    , NoPlasticSubtitle2P1:"En ocasiones, al retirar el filamento de la impresora se puede formar una masa en la punta. Esto no permite que el filamento fluya a través el extrusor. Para verificar si este es el problema, haga lo siguiente:"
+    , NoPlasticSubtitle2L1:"Retire el filamento de la impresora seleccionando el ícono de herramientas en la LCD de la impresora y luego seleccionado el botón que dice “tinta”."
+    , NoPlasticSubtitle2L2: "Una vez haya calentado la boquilla lo suficiente para poder retirarlo, los botones en la LCD se volverán blancos. Esto usualmente tarda unos 2 minutos."
+    , NoPlasticSubtitle2L3: "Continué presionando el botón de “retirar” hasta que pueda quitar el filamento fácilmente de la impresora."
+    , NoPlasticSubtitle2L4: "Con un par de tijeras corte alrededor de una pulgada de filamento de la bobina."
+    , NoPlasticSubtitle2L5: "Vuelva a colocar el filamento en el extrusor hasta que se sienta un poco apretado."
+    , NoPlasticSubtitle2L6: "Continúe presionando el botón de “insertar” hasta que el filamento salga de la boquilla."
+    , NoPlasticSubtitle2L7: "Intente imprimir algo simple, como el llavero de Toybox."
+    , NoPlasticSubtitle2L8: "Si el problema continúa, intente el siguiente paso."
     , NoPlasticSubtitle3: "La bobina del filamento esta enrollada."
+    , NoPlasticSubtitle3P1: "En ocasiones puede formarse un nudo en el rollo de filamento. Esto no permite que el filamento se desenrolle e ingrese a la impresora correctamente. Revise el rollo y asegúrese que no tenga u nudo y que puede fácilmente enrollar y desenrollar el filamento al jalar levemente del pedazo que sale del rollo."
+    , NoPlasticSubtitle3P2: "Si existe un nudo, retire el filamento de la impresora y deshaga el nudo. ¡La impresora debería estar lista para imprimir!"
     , NoPlasticSubtitle4: "La bobina del filamento esta viendo hacia la dirección equivocada."
+    , NoPlasticSubtitle4P1: "El filamento tiene una dirección apropiada a la que debe estar viendo al colocarlo detrás de su Toybox. En una dirección el filamento queda mucho más suelto que la otra. El filamento debe quedar lo más suelto posible para que la impresora pueda jalar el filamento con más facilidad."
+    , NoPlasticSubtitle4P2: "Para asegurarse que el filamento está lo más suelto posible, revise que el lado sólido del rollo está viendo hacia afuera. Vea la siguiente imagen como ejemplo:"
     , NoPlasticSubtitle5: "Está utilizando una bobina de un proveedor externo o no está utilizando una bobina."
+    , NoPlasticSubtitle5P1: "Debe tener una bobina de buena calidad para que las impresiones salgan correctamente. De no ser así la impresora no podrá jalar el filamento y no va a poder sacar impresiones. Puede revisar si esto está siendo un problema al dejar uno a dos pies de filamento suelto y luego intentado imprimir. Si su Toybox empieza a funcionar significa que la impresora no es lo suficientemente fuerte para jalar la bobina."
     , NoPlasticSubtitle6: "¡He intentado los pasos previos y aun no sale nada de mi impresora!"
+    , NoPlasticSubtitle6P1: "Lo más posible es que está teniendo un problema del hardware o un problema poco común. Por favor contáctenos a support@make.toys con la siguiente información para que podamos ayudarle personalmente a resolver su problema. De ser posible incluya un video de su Toybox imprimiendo ya que esto nos ayudará a identificar que está ocurriendo."
+    , NoPlasticSubtitle6L1: "Al imprimir, si sostiene levemente el filamento al ingresar el extrusor, ¿puede sentirlo hacer clic?"
+    , NoPlasticSubtitle6L2: "¿Está puesto el ventilador del extrusor? (Deberá poder oírlo ya que es bastante recio)"
+    , NoPlasticSubtitle6L3:  "¿Estaba funcionando la impresora antes? ¿Ha cambiado algo desde la última vez que estaba funcionado?"
     , GrindingNoseTitle: "Mi impresora esta hacienda un ruido a la hora de imprimir."
     , GrindingNoseP1: "Revise primero que el cable de arriba no este metido adentro del aparato. En ocasiones metemos el cable dentro para poder facilitar el envío, pero puede impedir que la impresora encuentre su posición correcta. Por favor vea la siguiente imagen:"
     , GrindingNoseP2: "Si el cable esta afuera y libre significa que por alguna razón los botones que definen la posición de la impresora no se están activando. Por favor encuentre los botones (X,Y,Z), puede ver la siguiente imagen para darse una mejor idea. Al presionar esos botones debería oír un clic."
@@ -184,9 +229,14 @@ export const strings = new LocalizedStrings({
     , BlobbyP4: 'Debe asegurarse que la primera capa que imprima quede bien, luego de eso deberían salir bien sus impresiones. A continuación, puede ver un ejemplo:'
     , ShiftingTitle: 'Mis impresiones parecen estar desplazadas.'
     , ShiftingP1: 'Esto seguramente ocurre porque algo esta previniendo que los motores en el plano XY se muevan adecuadamente. Usualmente ocurre porque algo está creando resistencia a el extrusor haciendo difícil que se desenrolle el filamento, revise sí:'
-    , ShiftingSubtitle1: 'La bobina esta desenrollada.'
-    , ShiftingSubtitle2: 'El filamento esta en la dirección correcta'
+    , ShiftingSubtitle1: 'La bobina del filamento está enrollada.'
+    , ShiftingSubtitle1P1: 'En ocasiones puede formarse un nudo en el rollo de filamento. Esto no permite que el filamento se desenrolle e ingrese a la impresora correctamente. Revise el rollo y asegúrese que no tenga un nudo y que puede fácilmente enrollar y desenrollar el filamento al jalar levemente del pedazo que sale del rollo.'
+    , ShiftingSubtitle1P2: 'Si existe un nudo, retire el filamento de la impresora y deshaga el nudo. ¡La impresora debería estar lista para imprimir!'
+    , ShiftingSubtitle2: 'La bobina del filamento está viendo hacia la dirección equivocada.'
+    , ShiftingSubtitle2P1: "El filamento tiene una dirección apropiada a la que debe estar viendo al colocarlo detrás de su Toybox. En una dirección el filamento queda mucho más suelto que la otra. El filamento debe quedar lo más suelto posible para que la impresora pueda jalar el filamento con más facilidad."
+    , ShiftingSubtitle2P2: "Para asegurarse que el filamento está lo más suelto posible, revise que el lado sólido del rollo está viendo hacia afuera. Vea la siguiente imagen como ejemplo:"
     , ShiftingSubtitle3:'Está utilizando una bobina de un proveedor externo o no está utilizando una bobina.'
+    , ShiftingSubtitle3P1:'Debe tener una bobina de buena calidad para que las impresiones salgan correctamente. De no ser así la impresora no podrá jalar el filamento y no va a poder sacar impresiones. Puede revisar si esto está siendo un problema al dejar uno a dos pies de filamento suelto y luego intentado imprimir. Si su Toybox empieza a funcionar significa que la impresora no es lo suficientemente fuerte para jalar la bobina.'
     , SetupTitle: 'Configuración'
     , CannotConnectTitle: '¡Ayuda! no me puedo conectar con la red TOYBOX.'
     , CannotConnectP1: 'Poco después de conectarse a la red “TOYBOX”, una ventana con un portal debería aparecer en su dispositivo. Aquí, debe de escoger una red de wifi a donde conectarse. Si esto no ocurre, por favor siga los siguientes pasos:'
