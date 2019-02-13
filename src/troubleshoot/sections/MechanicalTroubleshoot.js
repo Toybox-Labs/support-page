@@ -1,9 +1,59 @@
 import React, { Component } from 'react';
-import TroubleshootQuestionLink from '../components/TroubleshootQuestionLink'
 import TroubleshootQuestionTitle from '../components/TroubleshootQuestionTitle'
 import { strings } from '../strings';
+import ToyboxNavigationHelpers from '../../helpers/ToyboxNavigationHelpers'
 
 class MechanicalTroubleshoot extends Component {
+  
+  
+  moreSections = [
+    {
+      title: strings.PrintHeadWillNotMove,
+      body: strings.PrintHeadWillNotMoveBody,
+      
+      link: ToyboxNavigationHelpers.getContactURL(),
+      linkText: strings.contactUs
+    }
+    ,
+    {
+      title: strings.FilamentStuck,
+      body: strings.FilamentStuckBody,
+      
+    },
+
+    {
+      title: strings.ButtonDoesntWork,
+      body: strings.ButtonDoesntWorkBody,
+
+      link: ToyboxNavigationHelpers.getContactURL(),
+      linkText: strings.contactUs
+      
+    }
+  ]
+
+
+  renderItem(params, index)
+  {
+    let {title, body, link, linkText} = params
+    let lines = body.split('\n')
+    if(lines.length > 1)
+    {
+       body = body.split('\n').map((item, i) => {
+            return  <p>{item}</p>;
+        })
+    }
+   
+    return <div className="issue-sec" id={`mtq1${index+4}`}> 
+          <TroubleshootQuestionTitle title={title} metaobject={this} />
+            <div className="sec-body" key={index}>
+              <p>
+                {body} 
+                {link && <a className="blue-link" href={link} target="_blank">{' ' + linkText}</a>}
+              </p>
+            </div>
+          </div>
+  }
+
   render() {
     return (
       <div>
@@ -116,7 +166,6 @@ class MechanicalTroubleshoot extends Component {
               </ol>
             </div>
           </div>
-          <TroubleshootQuestionLink metaobject={this} questionId="mtq1" section="mechanical"/>
         </div>
       </div>
 
@@ -153,7 +202,6 @@ class MechanicalTroubleshoot extends Component {
             </li>
             <li>{strings.GrindingNoiseL9} </li>
           </ol>
-          <TroubleshootQuestionLink metaobject={this} questionId="mtq2" section="mechanical"/>
         </div>
       </div>
 
@@ -178,16 +226,16 @@ class MechanicalTroubleshoot extends Component {
           <p>
             <img className="portrait" src="https://s3-us-west-2.amazonaws.com/toybox-website-static-assets/ToyboxFirstLayer.jpg"/><br/>
           </p>
-          <TroubleshootQuestionLink metaobject={this} questionId="mtq3" section="mechanical"/>
         </div>
       </div>
       <div className="issue-sec" id="mtq4">
         <TroubleshootQuestionTitle title={strings.DamagedTitle} metaobject={this}/>
         <div className="sec-body">
           {strings.DamagedP1}
-          <TroubleshootQuestionLink metaobject={this} questionId="mtq4" section="mechanical"/>
         </div>
       </div>
+        {this.moreSections.map(this.renderItem.bind(this))}
+
       </div>
     );
   }

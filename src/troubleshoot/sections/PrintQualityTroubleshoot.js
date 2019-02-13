@@ -1,9 +1,63 @@
 import React, { Component } from 'react';
-import TroubleshootQuestionLink from '../components/TroubleshootQuestionLink'
 import TroubleshootQuestionTitle from '../components/TroubleshootQuestionTitle'
 import { strings } from '../strings';
+import ToyboxNavigationHelpers from '../../helpers/ToyboxNavigationHelpers'
 
 class PrinterQualityTroubleshoot extends Component {
+
+
+  moreSections = [
+    {
+      title: strings.shakyPrints,
+      body: strings.shakyPrintsBody,
+      linkText: strings.video,
+      link: "https://youtu.be/ULlW1uns1JI"
+    },
+    {
+      title: strings.PrintsCancel,
+      body: strings.PrintsCancelBody,
+      
+      link: ToyboxNavigationHelpers.getFactoryResetLink(),
+      linkText: strings.factoryReset
+    },
+    {
+      title: strings.PrintHeadWillNotMove,
+      body: strings.PrintHeadWillNotMoveBody,
+      
+      link: ToyboxNavigationHelpers.getContactURL(),
+      linkText: strings.contactUs
+    }
+    ,
+    {
+      title: strings.FilamentStuck,
+      body: strings.FilamentStuckBody,
+      
+    }
+  ]
+
+  
+
+  renderItem(params, index)
+  {
+    let {title, body, link, linkText} = params
+    let lines = body.split('\n')
+    if(lines.length > 1)
+    {
+       body = body.split('\n').map((item, i) => {
+            return  <p>{item}</p>;
+        })
+    }
+   
+    return <div className="issue-sec" id={`pqq${index+6}`}> 
+          <TroubleshootQuestionTitle title={title} metaobject={this} />
+            <div className="sec-body" key={index}>
+              <p>
+                {body} 
+                {link && <a className="blue-link" href={link} target="_blank">{' ' + linkText}</a>}
+              </p>
+            </div>
+          </div>
+  }
   render() {
     return (
       <div>
@@ -20,7 +74,6 @@ class PrinterQualityTroubleshoot extends Component {
             </p>
             <img className="portrait" src="https://s3-us-west-2.amazonaws.com/toybox-website-static-assets/toybox_correct_way_to_load_printer_food_roll.JPG"/>
             <img className="portrait" src="https://s3-us-west-2.amazonaws.com/toybox-website-static-assets/toybox_wrong_way_to_load_printer_food_roll.JPG"/>
-            <TroubleshootQuestionLink metaobject={this} questionId="pqq1" section="quality"/>
           </div>
         </div>
 
@@ -33,7 +86,6 @@ class PrinterQualityTroubleshoot extends Component {
             <p>
               {strings.WarpedLayersP2}
             </p>
-            <TroubleshootQuestionLink metaobject={this} questionId="pqq2" section="quality"/>
           </div>
         </div>
 
@@ -58,7 +110,6 @@ class PrinterQualityTroubleshoot extends Component {
                 <img className="portrait" src="https://s3-us-west-2.amazonaws.com/toybox-website-static-assets/ToyboxFirstLayer.jpg"/>
               </p>
             </div>
-            <TroubleshootQuestionLink metaobject={this} questionId="pqq3" section="quality"/>
           </div>
         </div>
 
@@ -80,7 +131,6 @@ class PrinterQualityTroubleshoot extends Component {
             <p>
               <img className="portrait" src="https://s3-us-west-2.amazonaws.com/toybox-website-static-assets/ToyboxFirstLayer.jpg"/>
             </p>
-            <TroubleshootQuestionLink metaobject={this} questionId="pqq4" section="quality"/>
           </div>
         </div>
 
@@ -131,10 +181,9 @@ class PrinterQualityTroubleshoot extends Component {
               </div>
             </div>
 
-            <TroubleshootQuestionLink metaobject={this} questionId="pqq5" section="quality"/>
-
           </div>
         </div>
+        {this.moreSections.map(this.renderItem.bind(this))}
       </div>
     );
   }

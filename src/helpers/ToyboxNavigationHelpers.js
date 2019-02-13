@@ -17,6 +17,17 @@ ToyboxNavigationHelpers.getContactURL= function(){
   return 'https://www.make.toys/contact'
 }
 
+
+ToyboxNavigationHelpers.getCutomToysURL= function(){
+  return 'https://www.make.toys/custom-toys'
+}
+
+
+ToyboxNavigationHelpers.getWelcomeURL= function(){
+  return 'https://www.make.toys/welcome'
+}
+
+
 ToyboxNavigationHelpers.getToysURL= function(){
   return 'https://www.make.toys/toys'
 }
@@ -57,5 +68,9 @@ ToyboxNavigationHelpers.goToContact = function(){
   window.location = ToyboxNavigationHelpers.getContactURL()
 }
 
+
+ToyboxNavigationHelpers.getFactoryResetLink = function(){
+  return "https://youtu.be/aub1aiHO4YQ"
+}
 
 export default ToyboxNavigationHelpers

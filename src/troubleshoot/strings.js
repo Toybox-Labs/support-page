@@ -141,6 +141,36 @@ export const strings = new LocalizedStrings({
     , MissingSomethingA1: 'here'
     , OpenSourceMessage: 'This page is open source. Help out the community by contributing '
     , OpenSourceA1: 'here'
+  
+
+
+    , cantConnectToybox: "Can't connect to the Toybox network"
+    , cantConnectToyboxBody: "Try unplugging the Toybox and plugging it back in then see if you can connect. If that doesn't work try a different device such as a PC or mobile phone."
+    , cantFindNetwork: "I can connect to the TOYBOX network, but I can’t find my home network."
+    , cantFindNetworkBody: "Toybox can only work 2.4 band routers and will not work with corporate WiFi. The best solution if you can not change your network settings is to use a phone hotspot."
+    , cantFindCode: "My printer is not showing the code to link my profile or my code doesn't work"
+    , cantFindCodeBody: "Press the 'ACCOUNT' button on the Toybox and it should generate a new code for you to connect."
+    , stuckLoading: "My Printer screen stays in loading"
+    , stuckLoadingBody: "If it is stuck in loading try to give it about a minute to see if it changes, if nothing happens you can try a factory reset."
+    , factoryReset: "Factory Reset"
+    , shakyPrints: "My prints look bubbly or shaky"
+    , shakyPrintsBody: "If your prints are coming out shaky, where they are not getting printed up and down you may need your belt readjusted."
+    , video: "Video"
+    , PrintsCancel: "Print frequently cancels halfway through the print"
+    , PrintsCancelBody: "This is likely caused by some data getting messed up on your printer. You should try a factory reset."
+    , PrintHeadWillNotMove: "Print head will not move side to side just front to back"
+    , PrintHeadWillNotMoveBody: "First, check to make sure there is not anything inside the printer that could be interfering with the print head. Make sure that the switches in the back left and to the right of the print head are not being hit. If those are clear and you are still having problems you can try tightening the gear pulley to the right of the printer. If you are still having problems you can contact us."
+    , contactUs: "Contact Us"
+    , FilamentStuck: "Filament/toy stuck in nozzle"
+    , FilamentStuckBody: "To fix this, simply unplug the printer, push the print tray down with your hands (the filament will probably still be stuck to the nozzle). Then plug the printer back in and put the printer into ink mode by pressing the gear on the LCD and then clicking the button that says 'ink'.\n When the buttons for insert and remove become white, you should be able to pull the filament off the nozzle. At that point, you should be able to place the print bed back on the tray and can start printing again!"
+    , ButtonDoesntWork:"Button LED doesn’t turn on, or Button doesn’t work when pressed"
+    , ButtonDoesntWorkBody:"Sadly there is nothing we can do to fix that please contact us and we can help figure out the best thing to do."
+    , ButtonDoesntWorkBody:"Sadly there is nothing we can do to fix that please contact us and we can help figure out the best thing to do."
+    , ImportToys:"How do I upload my own models to print?"
+    , ImportToysBody:"You can upload STL or OBJ files in our Creator Space in any browser. "
+    , CreatorSpace: "Creator Space"
+    , DrawMode:"How do I access draw mode?"
+    , DrawModeBody:'Simply navigate to the creator space, by clicking the profile icon in the top right on your web browser or press the menu button in the top left on the app then press the item that says “creator space” After that, click the button that says “Draw”'
   }
   , es:{
     AccountTitle:'Cuenta'
